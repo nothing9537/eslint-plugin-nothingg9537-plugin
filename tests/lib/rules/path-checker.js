@@ -25,7 +25,7 @@ const ruleTester = new RuleTester({
 ruleTester.run("path-checker", rule, {
   valid: [
     {
-      filename: 'C:\\Users\\Vadick\\Desktop\\projects\\production-react-advanced-project\\src\\entities\\Article',
+      filename: 'C:\\Users\\Nothingg9537\\Desktop\\projects\\production-react-advanced-project\\src\\entities\\Article',
       code: "import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice';",
       errors: [],
     },
@@ -33,14 +33,14 @@ ruleTester.run("path-checker", rule, {
 
   invalid: [
     {
-      filename: 'C:\\Users\\Vadick\\Desktop\\projects\\production-react-advanced-project\\src\\entities\\Article',
+      filename: 'C:\\Users\\Nothingg9537\\Desktop\\projects\\production-react-advanced-project\\src\\entities\\Article',
       code: "import { addCommentFormActions, addCommentFormReducer } from 'entities/Article/model/slices/addCommentFormSlice';",
       errors: [{
         message: 'Bad path in local module! Please use local imports imports instead of absolute imports in module!',
       }],
     },
     {
-      filename: 'C:\\Users\\Vadick\\Desktop\\projects\\production-react-advanced-project\\src\\entities\\Article',
+      filename: 'C:\\Users\\Nothingg9537\\Desktop\\projects\\production-react-advanced-project\\src\\entities\\Article',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/model/slices/addCommentFormSlice';",
       errors: [{
         message: 'Bad path in local module! Please use local imports imports instead of absolute imports in module!',

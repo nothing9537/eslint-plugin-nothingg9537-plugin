@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-nothingg9537-plugin",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Eslint plugin for react-production-advanced-project",
   "keywords": [
     "eslint",
@@ -18,6 +18,7 @@
     "update:eslint-docs": "eslint-doc-generator"
   },
   "dependencies": {
+    "micromatch": "^4.0.5",
     "requireindex": "^1.2.0"
   },
   "devDependencies": {
