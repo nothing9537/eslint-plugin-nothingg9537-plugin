@@ -36,14 +36,14 @@ ruleTester.run("path-checker", rule, {
       filename: 'C:\\Users\\Nothingg9537\\Desktop\\projects\\production-react-advanced-project\\src\\entities\\Article',
       code: "import { addCommentFormActions, addCommentFormReducer } from 'entities/Article/model/slices/addCommentFormSlice';",
       errors: [{
-        message: 'Bad path in local module! Please use local imports imports instead of absolute imports in module!',
+        messageId: 'badPath',
       }],
     },
     {
       filename: 'C:\\Users\\Nothingg9537\\Desktop\\projects\\production-react-advanced-project\\src\\entities\\Article',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/model/slices/addCommentFormSlice';",
       errors: [{
-        message: 'Bad path in local module! Please use local imports imports instead of absolute imports in module!',
+        messageId: 'badPath',
       }],
       options: [{
         alias: '@'
